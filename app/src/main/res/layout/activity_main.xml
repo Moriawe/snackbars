@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- HEADER -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Snackbar tester"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- LEFT SIDE -->
+
+    <TextView
+        android:id="@+id/TVSnackbarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:text="Text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/TVSnackbarDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Duration"
+        app:layout_constraintEnd_toEndOf="@+id/TVSnackbarText"
+        app:layout_constraintTop_toBottomOf="@+id/TVSnackbarText"/>
+
+    <TextView
+        android:id="@+id/TVSnackbarBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Background"
+        app:layout_constraintEnd_toEndOf="@+id/TVSnackbarText"
+        app:layout_constraintTop_toBottomOf="@+id/TVSnackbarDuration" />
+
+    <TextView
+        android:id="@+id/TVSnackbarTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Textcolor"
+        app:layout_constraintEnd_toEndOf="@+id/TVSnackbarText"
+        app:layout_constraintTop_toBottomOf="@+id/TVSnackbarBackground"/>
+
+    <TextView
+        android:id="@+id/TVSnackbarMaxLines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Max lines"
+        app:layout_constraintEnd_toEndOf="@+id/TVSnackbarText"
+        app:layout_constraintTop_toBottomOf="@+id/TVSnackbarTextColor"/>
+
+    <TextView
+        android:id="@+id/TVSnackbarAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Action"
+        app:layout_constraintEnd_toEndOf="@+id/TVSnackbarText"
+        app:layout_constraintTop_toBottomOf="@+id/TVSnackbarMaxLines"/>
+
+    <TextView
+        android:id="@+id/TVSnackbarActionColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Actioncolor"
+        app:layout_constraintEnd_toEndOf="@+id/TVSnackbarText"
+        app:layout_constraintTop_toBottomOf="@+id/TVSnackbarAction"/>
+
+    <!-- RIGHT SIDE -->
+
+    <EditText
+        android:id="@+id/ETSnackbarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:hint="Snackbar text message"
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/TVSnackbarText"
+        app:layout_constraintStart_toEndOf="@+id/TVSnackbarText"
+        app:layout_constraintTop_toTopOf="@+id/TVSnackbarText" />
+
+    <EditText
+        android:id="@+id/ETSnackbarDuration"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="12sp"
+        android:layout_marginLeft="50dp"
+        android:hint="16"
+        app:layout_constraintBottom_toBottomOf="@+id/TVSnackbarDuration"
+        app:layout_constraintStart_toEndOf="@+id/TVSnackbarDuration"
+        app:layout_constraintTop_toTopOf="@+id/TVSnackbarDuration" />
+
+    <Spinner
+        android:id="@+id/SpinnerBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:textAlignment="center"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/TVSnackbarBackground"
+        app:layout_constraintStart_toEndOf="@+id/TVSnackbarBackground"
+        app:layout_constraintTop_toTopOf="@+id/TVSnackbarBackground" />
+
+    <Spinner
+        android:id="@+id/SpinnerTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TVSnackbarTextColor"
+        app:layout_constraintStart_toEndOf="@+id/TVSnackbarTextColor"
+        app:layout_constraintTop_toTopOf="@+id/TVSnackbarTextColor" />
+
+    <Spinner
+        android:id="@+id/SpinnerMaxLines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TVSnackbarMaxLines"
+        app:layout_constraintStart_toEndOf="@+id/TVSnackbarMaxLines"
+        app:layout_constraintTop_toTopOf="@+id/TVSnackbarMaxLines" />
+
+    <Spinner
+        android:id="@+id/SpinnerAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TVSnackbarAction"
+        app:layout_constraintStart_toEndOf="@+id/TVSnackbarAction"
+        app:layout_constraintTop_toTopOf="@+id/TVSnackbarAction" />
+
+    <Spinner
+        android:id="@+id/SpinnerActionColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/TVSnackbarActionColor"
+        app:layout_constraintStart_toEndOf="@+id/TVSnackbarActionColor"
+        app:layout_constraintTop_toTopOf="@+id/TVSnackbarActionColor" />
+
+    <!-- BUTTON -->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Show Snackbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVSnackbarActionColor" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
